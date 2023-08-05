@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 // Conexão com o MongoDB
-const mongoURI = "mongodb://localhost:27017/controle_financeiro";
+const mongoURI = "mongodb://mongo:zMxFM7M7v0pDqy3ON2uI@containers-us-west-155.railway.app:6336/controle_financeiro";
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 const connection = mongoose.connection;
 connection.once("open", () => {
